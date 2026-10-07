@@ -1,0 +1,6 @@
+life-design.md
+.life-*/
+__pycache__/
+*.pyc
+.env
+.env.*

@@ -1,2 +1,60 @@
-# life-skill
-A Chinese Codex skill for thoughtful conversations about life, meaning, relationships, learning, and career choices.
+# life · 人生与生活
+
+一个用于人生意义、自我理解、关系、学习动力、职业探索和生活取舍的中文 Codex Skill。
+
+它希望让对话自然、坦诚、有判断力：可以讨论尚无答案的问题，也可以随便聊聊；可以提出异议，也需要接受用户纠正；在需要规划时，帮助作出选择并落实行动。
+
+## 设计原则
+
+- 回应具体经历，让提问和分析服务于当前需要，不要求每轮都有计划或行动项。
+- 区分可见的行为与尚待验证的动机，不用人格标签或虚构的心理解释制造洞见。
+- 允许多种价值与人生方向，不默认效率、收入或社会认可最大化。
+- 按需借用朋友视角、维特根斯坦、亚里士多德、芒格、塔莎·尤里奇和 CBT 自助思路，不逐项套用框架。
+- 使用用户提供或已授权的相关材料，尊重笔记的局限和隐私边界。
+
+## 安装
+
+将仓库克隆到个人 Skills 目录，并把安装目录命名为 `life`。目标目录已存在时，先检查已有内容，避免覆盖自己的修改。
+
+Windows / PowerShell：
+
+```powershell
+git clone https://github.com/ultronjackie/life-skill.git "$env:USERPROFILE\.codex\skills\life"
+```
+
+macOS / Linux：
+
+```bash
+git clone https://github.com/ultronjackie/life-skill.git "$HOME/.codex/skills/life"
+```
+
+如果已经配置了自己的 Skills 目录，将克隆目标替换为对应位置。
+
+## 使用
+
+在支持此 Skill 的 Codex 会话中，用 `$life` 开始，例如：
+
+```text
+$life 我想聊聊最近的生活，不急着给我排计划。
+$life 我一直收藏课程却没开始做项目，你可以直接指出我的问题。
+$life 帮我想想这几个职业方向，各自意味着怎样的日常生活。
+$life 我给你几段笔记，想看看反复困扰我的问题是什么。
+```
+
+也可以明确说明自己此刻想听看法、需要具体计划，或只想闲聊。普通事实查询和技术任务不属于本 Skill 的主要用途。
+
+## 文件
+
+```text
+SKILL.md              对话方式、判断原则与适用边界
+agents/openai.yaml    Codex 的名称、简介和默认调用提示
+references/lenses.md  按需使用的思考视角与参考来源
+```
+
+思考视角中的问题是应用示例，不是思想家的原话。来源链接位于 [references/lenses.md](references/lenses.md)。
+
+## 验证与迭代
+
+首版已完成 Skill 格式校验，并进行四个合成情境的独立试聊：意义讨论、对拖延行为的批评、具体复习安排，以及用户纠正此前解释。样本有限，不能据此保证长期效果或跨模型表现；后续根据真实使用反馈调整。
+
+本 Skill 使用日常自助反思思路，不提供诊断或宣称治疗。它不会自动访问私人笔记，也不自带跨会话记忆或外部知识库同步能力。

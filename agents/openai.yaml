@@ -1,0 +1,4 @@
+interface:
+  display_name: "life · 人生与生活"
+  short_description: "自然、坦诚地聊意义、关系、学习与未来，在需要时一起作出选择"
+  default_prompt: "用 $life 和我聊聊最近的生活与困惑，你可以提出有根据的不同看法。"
